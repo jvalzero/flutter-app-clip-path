@@ -36,9 +36,12 @@ class MyApp extends StatelessWidget {
                 top: 80.0,
               ),
             ),
-            ClipPath(
-              child: CustomAppBar("Star Fox"),
-              clipper: CustomAppBarClipper(),
+            CustomPaint(
+              painter: BoxShadowPainter(),
+              child: ClipPath(
+                child: CustomAppBar("Star Fox"),
+                clipper: CustomAppBarClipper(),
+              ),
             ),
           ],
         ),
